@@ -2,7 +2,7 @@ import { Separator } from "./ui/separator";
 
 export default function Footer() {
   return (
-    <div className="flex h-[48px] w-full items-center justify-between fixed bottom-0 px-[24px] border-foreground border-t">
+    <div className="flex h-[48px] w-full bg-slate-800 items-center justify-between fixed bottom-0 px-[24px] border-t">
       <div>
         <span className="text-xs">ⓒ 2024 Appwrite. All rights reserved.</span>
       </div>

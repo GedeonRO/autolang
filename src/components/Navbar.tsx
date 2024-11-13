@@ -1,9 +1,8 @@
 import { ChevronDown, Search } from "lucide-react";
 import { ModeToggle } from "./Toggle-mode";
-import { Separator } from "./ui/separator";
 export default function Navbar() {
   return (
-    <div className="flex w-full bg-navbar-bg items-center fixed top-0 px-5 h-[68px] justify-between  border-foreground border-b ">
+    <div className="flex w-full bg-navbar-bg items-center fixed top-0 px-5 h-[68px] justify-between border-b ">
       <div className="flex gap-4 items-center">
         <img className="size-8" src="yellow.png" alt="" />
         <span className="text-xl font-semibold">Autolang</span>
@@ -23,11 +22,8 @@ export default function Navbar() {
           <span className="cursor-pointer font-semibold">Feedback</span>
           <span className="cursor-pointer font-semibold">Support</span>
           <Search />
-          <Separator
-            className="bg-foreground h-[67px] w-[1px]"
-            orientation="vertical"
-          />
-          <div className="flex gap-12 items-center cursor-pointer">
+        
+          <div className="flex gap-12 items-center cursor-pointer  border-l  pl-8 ">
             <div className="flex gap-4 items-center">
               <div className="shrink-0 bg-slate-600 size-11 rounded-full flex items-center justify-center">
                 <span className="roboto-medium text-xl">G</span>
