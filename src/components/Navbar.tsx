@@ -2,7 +2,7 @@ import { ChevronDown, Search } from "lucide-react";
 import { ModeToggle } from "./Toggle-mode";
 export default function Navbar() {
   return (
-    <div className="flex w-full bg-navbar-bg items-center fixed top-0 px-5 h-[68px] justify-between border-b ">
+    <div className="flex w-full bg-navbar-bg items-center fixed top-0 px-5 h-[10svh] justify-between border-b ">
       <div className="flex gap-4 items-center">
         <img className="size-8" src="yellow.png" alt="" />
         <span className="text-xl font-semibold">Autolang</span>

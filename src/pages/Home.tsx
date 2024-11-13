@@ -106,7 +106,7 @@ export default function Home() {
                       </tbody>
                       <tfoot className="border-t">
                         <tr>
-                          <td colSpan="4" className="p-3 text-center">
+                          <td colSpan={4} className="p-3 text-center">
                             Upgrade your plan to add members to your
                             organization
                           </td>
