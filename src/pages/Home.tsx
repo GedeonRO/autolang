@@ -5,8 +5,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/Project-card";
 import Footer from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className="bg-navbar-bg">
       <Navbar />
@@ -43,9 +45,6 @@ export default function Home() {
                   <TabsTrigger className="hover:bg-button" value="members">
                     Members
                   </TabsTrigger>
-                  <TabsTrigger className="hover:bg-button" value="usage">
-                    Usage
-                  </TabsTrigger>
                   <TabsTrigger className="hover:bg-button" value="biling">
                     Billing
                   </TabsTrigger>
@@ -70,7 +69,9 @@ export default function Home() {
                     </button>
                   </div>
                   <div className="grid col-span-2 grid-cols-2 w-full gap-8">
-                    <ProjectCard />
+                    <div onClick={() => navigate("/project")}>
+                      <ProjectCard />
+                    </div>
                     <ProjectCard />
                   </div>
                 </div>
