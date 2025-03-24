@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
+    darkMode: ["class"],
+    content: ["./src/**/*.{html,js,ts,tsx,jsx}"],
   theme: {
   	extend: {
   		borderRadius: {
@@ -49,14 +49,6 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			},
-  			button: 'var(--button)',
-  			navbar: {
-  				bg: 'var(--navbar-bg)'
-  			},
-  			section: {
-  				bg: 'var(--section-bg)',
-  				tabcontent: 'var(--tab-content)'
   			},
   			sidebar: {
   				DEFAULT: 'hsl(var(--sidebar-background))',
